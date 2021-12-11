@@ -1,4 +1,4 @@
-import '../scss/style.scss'
+import '../scss/style.scss';
 
 function test(){
     let testvar = 1;

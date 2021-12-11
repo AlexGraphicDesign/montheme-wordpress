@@ -1,6 +1,7 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const path = require('path');
+const dev = process.env.NODE_ENV === 'dev';
 
 // change these variables to fit your project
 const jsPath= './src/js';
@@ -11,6 +12,7 @@ const entryPoints = {
   // 'app' is the output name, people commonly use 'bundle'
   // you can have more than 1 entry point
   'app': jsPath + '/app.js',
+  'style' : cssPath + '/style.scss'
 };
 
 module.exports = {
@@ -51,8 +53,9 @@ module.exports = {
           test: /\.s?[c]ss$/i,
           use: [
             MiniCssExtractPlugin.loader,
-            'css-loader',
-            'sass-loader'
+            "css-loader",
+            "postcss-loader",
+            "sass-loader",
           ]
         },
         {
@@ -60,6 +63,7 @@ module.exports = {
           use: [
             MiniCssExtractPlugin.loader,
             'css-loader',
+            "postcss-loader",
             {
               loader: 'sass-loader',
               options: {
