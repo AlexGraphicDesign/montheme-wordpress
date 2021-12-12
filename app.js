@@ -102,7 +102,8 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack://monthem
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/js/app.js");
+/******/ 	__webpack_require__("./src/js/app.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/scss/style.scss");
 /******/ 	
 /******/ })()
 ;

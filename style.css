@@ -15,11 +15,14 @@ Text Domain: bulle-d-art
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+nav {
+  background: green; }
 
-@import "./components/nav";
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: red;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px); }
 
-body{
-    display: flex;
-    background-color: red;
-    transform: translateX(20px);
-}
