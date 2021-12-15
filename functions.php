@@ -14,8 +14,21 @@
         wp_enqueue_script('bootstrap');
     }
 
+    function bulledart_title_separator()
+    {
+        return '|';
+    }
+
+    function bulledart_document_title_parts($title)
+    {
+        return $title;
+    }
+
     //Hook support du titre
     add_action('after_setup_theme', 'bulledart_supports');
 
     //Hook Ajout du style
     add_action('wp_enqueue_scripts', 'bulledart_register_assets');
+
+    add_filter('document_title_separator', 'bulledart_title_separator');
+    add_filter('document_title_parts', 'bulledart_document_title_parts');
