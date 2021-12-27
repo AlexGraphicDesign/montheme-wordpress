@@ -1,8 +1,6 @@
 <?php get_header(); ?>
 
-<?php $sports = get_terms(['taxonomy' => 'sport']); ?>
-
-<?php get_template_part('parts/taxonomy-nav', 'post'); ?>
+<h1>Tous nos biens</h1>
 
 <?php if (have_posts()) : ?>
 

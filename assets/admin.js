@@ -1,0 +1,1 @@
+jQuery(".bulledart_datepicker").flatpickr();

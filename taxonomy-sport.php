@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
-<?php $sports = get_terms(['taxonomy' => 'sport']); ?>
+<h1><?php echo esc_html(get_queried_object()->name); ?></h1>
+
+<p><?php echo esc_html(get_queried_object()->description); ?></p>
 
 <?php get_template_part('parts/taxonomy-nav', 'post'); ?>
 
