@@ -1,0 +1,17 @@
+.thumbnail.column-thumbnail{
+    width: 150px;
+}
+
+.column-sponso .bullet{
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+}
+
+.bullet-yes{
+    background: lightgreen;
+}
+
+.bullet-no{
+    background: red;
+}
